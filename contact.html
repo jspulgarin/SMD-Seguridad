@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMD Seguridad - Contáctanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="main-page">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Productos</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Contáctanos</a></li>
+                    <li><button id="logout-button">Cerrar Sesión</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contáctanos</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Redirigir al login si no está autenticado
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

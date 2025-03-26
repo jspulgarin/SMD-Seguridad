@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMD Seguridad - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="container">
+        <form id="login-form" class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <!-- Main Page -->
+    <div id="main-page" class="container hidden">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Productos</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Contáctanos</a></li>
+                    <li><button id="logout-button">Cerrar Sesión</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Slider -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="https://smdseguridad.com/images/home-gallery-4-1200x800-original.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="https://smdseguridad.com/images/home-gallery-1-1200x800-original.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="https://smdseguridad.com/images/home-gallery-3-1200x800-original.jpg" alt="Slide 3"></div>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+
+        <!-- Products Section -->
+        <section id="products">
+            <h2>Productos</h2>
+            <div class="product-grid">
+                <div class="product" data-info="Características
+                Tipo: Cámara Analógica
+                Serie: Cooper
+                Material: Plástica
+                Modelo: Domo Torreta,
+                Tipo de Lente: Lente Fijo
+                Distancia focal: 2.8mm
+                Resolución: 1080p
+                Tecnologia: 4 en 1,
+                Sensor de Imagen: Sensor 1/2.7
+                IR : IR 20m
+                Características: DWDR, Smart IR,
+                Alimentacion: 12VDC
+                Consumo: 2.3W
+                Fuente de poder mínima: 0.74A">
+                    <img src="https://gvscolombia.net/Galeria/Adjuntos/8b0869fef6464acdaacb432e37b9b208.png" alt="Producto 1">
+                    <h3>DH-HAC-T1A21N-0280B</h3>
+                    <p>$51.400</p>
+                </div>
+                <div class="product" data-info="
+                Tipo: Cámara Analógica
+                Serie: Cooper
+                Material: Plástica
+                Modelo: Domo Torreta,
+                Tipo de Lente: Lente Fijo
+                Distancia focal: 2.8mm
+                Resolución: 1080p
+                Tecnologia: 4 en 1,
+                Sensor de Imagen: Sensor 1/2.7
+                IR : IR 20m
+                Características: DWDR, Smart IR,
+                Alimentacion: 12VDC
+                Consumo: 2.3W
+                Fuente de poder mínima: 0.74A">
+                    <img src="https://gvscolombia.net/Galeria/Adjuntos/69eaf83c5ff64afe9184de7d9b6e7d85.png" alt="Producto 2">
+                    <h3>DH-HAC-B1A21N-0360B</h3>
+                    <p>$53.700</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Product Info Modal -->
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <p id="product-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
