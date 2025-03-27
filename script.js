@@ -1,4 +1,4 @@
-// Verificar si el usuario ya está autenticado al cargar la página
+
 document.addEventListener('DOMContentLoaded', function() {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     const loginPage = document.getElementById('login-page');
@@ -10,27 +10,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Manejar el formulario de login
+
 const loginForm = document.getElementById('login-form');
 if (loginForm) {
     loginForm.addEventListener('submit', function(e) {
         e.preventDefault();
         document.getElementById('login-page').classList.add('hidden');
         document.getElementById('main-page').classList.remove('hidden');
-        localStorage.setItem('isLoggedIn', 'true'); // Guardar el estado de login
+        localStorage.setItem('isLoggedIn', 'true'); 
     });
 }
 
-// Manejar el cierre de sesión
+
 const logoutButton = document.getElementById('logout-button');
 if (logoutButton) {
     logoutButton.addEventListener('click', function() {
-        localStorage.setItem('isLoggedIn', 'false'); // Cambiar el estado
-        window.location.href = 'index.html'; // Redirigir al login
+        localStorage.setItem('isLoggedIn', 'false'); 
+        window.location.href = 'index.html'; 
     });
 }
 
-// Slider
+
 const slides = document.querySelector('.slides');
 if (slides) {
     let slideIndex = 0;
@@ -50,14 +50,14 @@ if (slides) {
         showSlides();
     });
 
-    // Auto-slide
+    
     setInterval(() => {
         slideIndex = (slideIndex + 1) % totalSlides;
         showSlides();
     }, 5000);
 }
 
-// Product Modal
+
 const modal = document.getElementById('product-modal');
 if (modal) {
     const productInfo = document.getElementById('product-info');
