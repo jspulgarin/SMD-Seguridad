@@ -19,7 +19,7 @@ body {
     display: none;
 }
 
-/* Login Form */
+
 .login-form {
     max-width: 400px;
     margin: 100px auto;
@@ -43,7 +43,7 @@ body {
     cursor: pointer;
 }
 
-/* Navigation */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -58,7 +58,7 @@ nav a {
     margin: 0 20px;
 }
 
-/* Slider */
+
 .slider {
     position: relative;
     max-width: 500px;
@@ -69,18 +69,18 @@ nav a {
 .slides {
     display: flex;
     transition: transform 0.5s ease;
-    width: 100%; /* Aseguramos que ocupe todo el ancho disponible */
+    width: 100%; 
 }
 
 .slide {
-    flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho del contenedor */
-    max-width: 100%; /* Limita el ancho máximo al contenedor */
+    flex: 0 0 100%; 
+    max-width: 100%; 
 }
 
 .slide img {
     width: 100%;
     height: auto;
-    display: block; /* Elimina espacios no deseados debajo de la imagen */
+    display: block; 
 }
 
 .prev, .next {
@@ -97,7 +97,7 @@ nav a {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Products */
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -116,12 +116,12 @@ nav a {
     max-width: 25%;
 }
 
-/* Sections */
+
 section {
     padding: 40px 0;
 }
 
-/* Contact Form */
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -129,7 +129,7 @@ section {
     padding: 8px;
 }
 
-/* Modal */
+
 .modal {
     position: fixed;
     top: 0;
